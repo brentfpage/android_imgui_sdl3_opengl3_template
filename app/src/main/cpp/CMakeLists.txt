@@ -20,18 +20,18 @@ add_library(
         native-plasma
         SHARED
         main.cpp
-        imgui/imgui.cpp
-        imgui/imgui_demo.cpp
-        imgui/imgui_draw.cpp
-        imgui/imgui_tables.cpp
-        imgui/imgui_widgets.cpp
-        imgui/backends/imgui_impl_sdl3.cpp
-        imgui/backends/imgui_impl_opengl3.cpp
+        deps/imgui/imgui.cpp
+        deps/imgui/imgui_demo.cpp
+        deps/imgui/imgui_draw.cpp
+        deps/imgui/imgui_tables.cpp
+        deps/imgui/imgui_widgets.cpp
+        deps/imgui/backends/imgui_impl_sdl3.cpp
+        deps/imgui/backends/imgui_impl_opengl3.cpp
 )
 
 target_include_directories(native-plasma PRIVATE
-        imgui
-        imgui/backends
+        deps/imgui
+        deps/imgui/backends
         ${SDL3_INCLUDE_DIR}
     )
 
