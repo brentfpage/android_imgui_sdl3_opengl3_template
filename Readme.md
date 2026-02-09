@@ -3,7 +3,7 @@ The principal product is an Android app that runs the default imgui demo using O
 backend and SDL3 as the platform backend.
 app/src/main/cpp/main.cpp has been copied from cpp/deps/imgui/examples/example_sdl3_opengl3/main.cpp
 
-# Local machine config:
+### Local machine config:
     - installed sdk: Android 16 Baklava; API level 36
     - installed ndk: 28.2.13676358
     - output of `./gradlew --version`
@@ -25,12 +25,12 @@ app/src/main/cpp/main.cpp has been copied from cpp/deps/imgui/examples/example_s
     - Android Studio version: Otter 3 Feature Drop | 2025.2.3
         - conceivably, it is sufficient to just have the ndk, sdk, java, and gradle installed
 
-# Setup:
+### Setup:
     - change sdk.dir in local.properties to point to the Android sdk on your computer
     - possibly, run `chmod +700 gradlew` from the repo home directory to make gradlew executable
     - to minimize headaches, update java and the android ndk and sdk on your computer to the versions stated above
 
-# Build and install:
+### Build and install:
     - connect your Android device to your computer
     - from the repo home directory, run `run ./gradlew -DANDROID installDebug`
 
