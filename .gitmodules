@@ -1,0 +1,6 @@
+[submodule "app/src/main/cpp/deps/imgui"]
+	path = app/src/main/cpp/deps/imgui
+	url = https://github.com/ocornut/imgui
+[submodule "app/src/main/cpp/deps/SDL"]
+	path = app/src/main/cpp/deps/SDL
+	url = https://github.com/libsdl-org/SDL
