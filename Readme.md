@@ -1,7 +1,6 @@
 This is a 2026 refresh of https://github.com/sfalexrog/Imgui_Android/tree/master.
 The principal product is an Android app that runs the default imgui demo using OpenGL3 as the renderer
 backend and SDL3 as the platform backend.
-app/src/main/cpp/main.cpp has been copied from cpp/deps/imgui/examples/example_sdl3_opengl3/main.cpp
 
 ### Local machine config:
 - installed sdk: Android 16 Baklava; API level 36
