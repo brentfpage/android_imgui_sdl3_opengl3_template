@@ -76,7 +76,10 @@
 #
 # Modified by brentfpage: SDL2->SDL3
 # specified set(SDL_STATIC ON) in the if(ANDROID) block
-# also, in app/src/main/cpp/CMakeLists.txt, instead of using the convenience variable ${SDL3_LIBRARY} in target_link_libraries(native-plasma ${SDL3_LIBRARY}$,...), I hard-coded the value SDL3-static, as in target_link_libraries(native-plasma ${SDL3_LIBRARY}$, SDL3-static)
+# also, in app/src/main/cpp/CMakeLists.txt, instead of using the convenience
+# variable ${SDL3_LIBRARY} in target_link_libraries(native-plasma ...
+# ${SDL3_LIBRARY}$ ) I hard-coded the value SDL3-static, as in
+# target_link_libraries(native-plasma ... SDL3-static )
 
 if (ANDROID)
 	set(_SDL_SOURCE_SEARCH_PATHS
