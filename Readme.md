@@ -14,6 +14,8 @@ backend and SDL3 as the platform backend.
     - Java: OpenJDK 17.0.18
 
 ### Setup:
+- download this repo (and its dependencies: SDL3 and imgui) to your computer by running
+`git clone --recursive https://github.com/brentfpage/android_imgui_sdl3_opengl3_template.git`
 - change sdk.dir in local.properties to point to the Android sdk on your computer
 - possibly, run `chmod +700 gradlew` from the repo home directory to make gradlew executable
 - to minimize headaches, update java and the android ndk and sdk on your computer to the versions stated above
