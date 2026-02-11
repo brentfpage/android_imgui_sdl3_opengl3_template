@@ -37,8 +37,6 @@ target_include_directories(native-plasma PRIVATE
 
 target_compile_definitions(native-plasma PRIVATE IMGUI_IMPL_OPENGL_ES3)
 
-set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -u ANativeActivity_onCreate")
-
 # add lib dependencies
 target_link_libraries(native-plasma
         android
@@ -46,7 +44,6 @@ target_link_libraries(native-plasma
         EGL
         GLESv3
         SDL3-static
-        #        ${SDL3_LIBRARY}
     )
 
 
